@@ -2,8 +2,8 @@
 Il software stampa il maggiore*/
 
 
-let num1 = parseFloat(prompt("Inserisci il primo numero:"));
-let num2 = parseFloat(prompt("Inserisci il secondo numero:"));
+let num1 = Number((prompt("Inserisci il primo numero:")));
+let num2 = Number((prompt("Inserisci il secondo numero:")));
 
 if (num1 > num2) {
     console.log(`Il numero maggiore è: ${num1}`);
