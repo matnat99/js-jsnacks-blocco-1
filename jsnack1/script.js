@@ -1,14 +1,30 @@
 /*L’utente inserisce due numeri in successione, con due prompt.
 Il software stampa il maggiore*/
 
+let num1;
 
-let num1 = Number((prompt("Inserisci il primo numero:")));
-let num2 = Number((prompt("Inserisci il secondo numero:")));
+do{
+    num1 = Number(prompt("Inserisci il primo numero:"));
+    if (isNaN(num1)) {
+        alert("Per favore inserisci un numero valido");
+    }
+}while (isNaN(num1));
+
+let num2;
+
+do{
+    num2 = Number(prompt("Inserisci il secondo numero:"));
+    if (isNaN(num2)) {
+        alert("Per favore inserisci un numero valido");
+    }
+} while (isNaN(num2));
+
 
 if (num1 > num2) {
-    console.log(`Il numero maggiore è: ${num1}`);
+    alert(`Il numero maggiore è: ${num1}`);
 } else if (num2 > num1) {
-    console.log(`Il numero maggiore è: ${num2}`);
+    alert(`Il numero maggiore è: ${num2}`);
 } else {
-    console.log("I due numeri sono uguali.");
+    alert("I due numeri sono uguali.");
 }
+
